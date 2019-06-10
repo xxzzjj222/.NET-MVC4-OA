@@ -17,6 +17,7 @@ namespace OA.UIPortal.Controllers
 
         public ActionResult Index()
         {
+            //throw new Exception("出错啦");
             ViewData.Model = UserInfoService.GetEntities(u=>true);
             return View();
         }

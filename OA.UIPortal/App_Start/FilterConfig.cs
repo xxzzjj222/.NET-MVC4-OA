@@ -10,6 +10,7 @@ namespace OA.UIPortal
         {
             //filters.Add(new HandleErrorAttribute());
             filters.Add(new MyExceptionFilterAttribute());
+            filters.Add(new LoginVerifyFilterAttribute() { IsCheck=true});
         }
     }
 }

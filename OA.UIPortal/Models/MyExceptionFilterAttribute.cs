@@ -11,7 +11,7 @@ namespace OA.UIPortal.Models
         public override void OnException(ExceptionContext filterContext)
         {
             base.OnException(filterContext);
-            Commom.LogHelper.WriteLog(filterContext.ToString());
+            Commom.LogHelper.WriteLog(filterContext.Exception.ToString());
         }
     }
 }

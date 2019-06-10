@@ -16,7 +16,7 @@ namespace OA.UIPortal
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "UserInfo", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "UserLogin", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

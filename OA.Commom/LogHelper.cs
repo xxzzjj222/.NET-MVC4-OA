@@ -10,18 +10,22 @@ namespace OA.Commom
     public class LogHelper
     {
         public static Queue<string> ExceptionStringQueue = new Queue<string>();
-        public static List<ILogWriter> LogWriteList;
-        public LogHelper()
+        public static List<ILogWriter> LogWriteList = new List<ILogWriter>();
+        static LogHelper()
         {
+            LogWriteList.Add(new Log4NetWriter());
             ThreadPool.QueueUserWorkItem(o=>{
                 while (true)
                 {
                     lock (ExceptionStringQueue)
                     {
-                        string exceptionText = ExceptionStringQueue.Dequeue();
-                        foreach (ILogWriter item in LogWriteList)
+                        if (ExceptionStringQueue.Count > 0)
                         {
-                            item.WriteLogInfo(exceptionText);
+                            string exceptionText = ExceptionStringQueue.Dequeue();
+                            foreach (ILogWriter item in LogWriteList)
+                            {
+                                item.WriteLogInfo(exceptionText);
+                            }
                         }
                     }
                 }

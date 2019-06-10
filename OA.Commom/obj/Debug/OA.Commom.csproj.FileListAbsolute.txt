@@ -6,3 +6,6 @@ F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Commom\
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Commom\bin\Debug\OA.Commom.pdb
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Commom\obj\Debug\OA.Commom.dll
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Commom\obj\Debug\OA.Commom.pdb
+F:\xzj\vs\OA\OA.Commom\bin\Debug\log4net.dll
+F:\xzj\vs\OA\OA.Commom\bin\Debug\log4net.xml
+F:\xzj\vs\OA\OA.Commom\obj\Debug\OA.Commom.csprojResolveAssemblyReference.cache
