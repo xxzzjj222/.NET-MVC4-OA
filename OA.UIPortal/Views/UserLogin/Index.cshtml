@@ -12,8 +12,10 @@
     <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
     <script>
         function loginSuccess(data) {
-            if (data == "ok") {
+            if (data == "succeed") {
                 window.location.href = "/UserInfo/Index";
+            } else if (data == "failed") {
+                alert("登录失败");
             }
         }
     </script>
@@ -22,8 +24,10 @@
     @using (Ajax.BeginForm("ProcessLogin", "UserLogin", new AjaxOptions() { OnSuccess = "loginSuccess" }))
     {
     <div>
-            @Html.Label("姓名")
-            @Html.TextBox("Name")
+            @Html.Label("同户名")
+            @Html.TextBox("UserName")
+            @Html.Label("密码")
+            @Html.TextBox("Password")
             <input type="submit" value="提交" style="width:50px;height:50px" />
     </div>
     }

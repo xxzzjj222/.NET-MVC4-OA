@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 06/01/2019 16:56:57
--- Generated from EDMX file: F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Model\Db.edmx
+-- Date Created: 06/10/2019 09:00:25
+-- Generated from EDMX file: F:\xzj\vs\OA\OA.Model\Db.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -39,7 +39,8 @@ GO
 -- Creating table 'UserInfo'
 CREATE TABLE [dbo].[UserInfo] (
     [ID] int IDENTITY(1,1) NOT NULL,
-    [Name] nvarchar(32)  NULL
+    [Name] nvarchar(32)  NULL,
+    [Password] nvarchar(max)  NOT NULL
 );
 GO
 

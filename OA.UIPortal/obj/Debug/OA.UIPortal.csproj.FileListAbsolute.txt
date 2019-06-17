@@ -139,3 +139,6 @@ F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.UIPorta
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.UIPortal\obj\Debug\OA.UIPortal.pdb
 F:\xzj\vs\OA\OA.UIPortal\bin\log4net.dll
 F:\xzj\vs\OA\OA.UIPortal\bin\log4net.xml
+F:\xzj\vs\OA\OA.UIPortal\bin\Commons.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\ICSharpCode.SharpZipLib.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\Memcached.ClientLibrary.dll

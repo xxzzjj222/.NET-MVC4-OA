@@ -19,6 +19,7 @@
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" Nullable="true" MaxLength="32" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="OrderInfo">
     <Key>
@@ -59,6 +60,7 @@
           <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" Nullable="true" MaxLength="32" />
           <NavigationProperty Name="OrderInfo" Relationship="Db.UserInfoOrderInfo" FromRole="UserInfo" ToRole="OrderInfo" />
+          <Property Type="String" Name="Password" Nullable="false" />
         </EntityType>
         <EntityType Name="OrderInfo">
           <Key>
@@ -92,6 +94,7 @@
         <MappingFragment StoreEntitySet="UserInfo">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

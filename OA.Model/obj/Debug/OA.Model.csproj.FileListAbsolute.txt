@@ -21,3 +21,4 @@ F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Model\b
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Model\bin\Debug\EntityFramework.SqlServer.xml
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\OA.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\xzj\vs\OA\OA.Model\obj\Debug\OA.Model.csprojResolveAssemblyReference.cache

@@ -15,6 +15,7 @@
     <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Type="String" Name="Name" Nullable="true" MaxLength="32" />
     <NavigationProperty Name="OrderInfo" Relationship="Db.UserInfoOrderInfo" FromRole="UserInfo" ToRole="OrderInfo" />
+    <Property Type="String" Name="Password" Nullable="false" />
   </EntityType>
   <EntityType Name="OrderInfo">
     <Key>
