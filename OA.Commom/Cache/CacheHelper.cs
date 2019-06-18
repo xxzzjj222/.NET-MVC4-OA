@@ -14,9 +14,9 @@ namespace OA.Commom.Cache
         static CacheHelper()
         {
             IApplicationContext ctx = ContextRegistry.GetContext();
-            ctx.GetObject("CacheHelper");
+            //ctx.GetObject("CacheHelper");
 
-            //CacheWriter = ctx.GetObject("CacheWriter") as ICacheWriter;
+            CacheWriter = ctx.GetObject("CacheWriter") as ICacheWriter;
         }
         public static void AddCache(string key,object value,DateTime expTime)
         {

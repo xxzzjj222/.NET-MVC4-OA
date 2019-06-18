@@ -27,3 +27,4 @@ F:\xzj\vs\OA\OA.Commom\bin\Debug\zh-Hans\System.Web.Http.WebHost.resources.dll
 F:\xzj\vs\OA\OA.Commom\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
 F:\xzj\vs\OA\OA.Commom\obj\Debug\OA.Commom.csprojResolveAssemblyReference.cache
 F:\xzj\vs\OA\OA.Commom\bin\Debug\log4net.xml
+F:\xzj\vs\OA\OA.Commom\bin\Debug\Memcached.ClientLibrary.pdb
