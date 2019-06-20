@@ -1,0 +1,11 @@
+F:\xzj\vs\OA\RedisDemo\bin\Debug\RedisDemo.exe.config
+F:\xzj\vs\OA\RedisDemo\bin\Debug\RedisDemo.exe
+F:\xzj\vs\OA\RedisDemo\bin\Debug\RedisDemo.pdb
+F:\xzj\vs\OA\RedisDemo\bin\Debug\ServiceStack.Common.dll
+F:\xzj\vs\OA\RedisDemo\bin\Debug\ServiceStack.Interfaces.dll
+F:\xzj\vs\OA\RedisDemo\bin\Debug\ServiceStack.Redis.dll
+F:\xzj\vs\OA\RedisDemo\bin\Debug\ServiceStack.Text.dll
+F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.csprojResolveAssemblyReference.cache
+F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.exe
+F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.pdb
+F:\xzj\vs\OA\RedisDemo\bin\Debug\Newtonsoft.Json.dll

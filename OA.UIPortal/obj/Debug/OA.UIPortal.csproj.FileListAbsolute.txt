@@ -142,3 +142,10 @@ F:\xzj\vs\OA\OA.UIPortal\bin\Commons.dll
 F:\xzj\vs\OA\OA.UIPortal\bin\ICSharpCode.SharpZipLib.dll
 F:\xzj\vs\OA\OA.UIPortal\bin\Memcached.ClientLibrary.dll
 F:\xzj\vs\OA\OA.UIPortal\bin\Memcached.ClientLibrary.pdb
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Common.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Interfaces.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Text.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Common.xml
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Interfaces.xml
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Text.pdb
+F:\xzj\vs\OA\OA.UIPortal\bin\ServiceStack.Text.xml
