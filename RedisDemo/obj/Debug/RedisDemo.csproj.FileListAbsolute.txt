@@ -9,3 +9,6 @@ F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.csprojResolveAssemblyReference.cache
 F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.exe
 F:\xzj\vs\OA\RedisDemo\obj\Debug\RedisDemo.pdb
 F:\xzj\vs\OA\RedisDemo\bin\Debug\Newtonsoft.Json.dll
+F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\RedisDemo\bin\Debug\RedisDemo.exe.config
+F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\RedisDemo\obj\Debug\RedisDemo.exe
+F:\xzj\vs2012\OA\Net-MVC4-OA-Simple-master\.Net-MVC4-OA-Simple-master\RedisDemo\obj\Debug\RedisDemo.pdb
