@@ -1,0 +1,12 @@
+F:\xzj\vs\OA\OA.Model\bin\Release\OA.Model.dll.config
+F:\xzj\vs\OA\OA.Model\bin\Release\OA.Model.dll
+F:\xzj\vs\OA\OA.Model\bin\Release\OA.Model.pdb
+F:\xzj\vs\OA\OA.Model\bin\Release\EntityFramework.dll
+F:\xzj\vs\OA\OA.Model\bin\Release\EntityFramework.SqlServer.dll
+F:\xzj\vs\OA\OA.Model\bin\Release\EntityFramework.xml
+F:\xzj\vs\OA\OA.Model\bin\Release\EntityFramework.SqlServer.xml
+F:\xzj\vs\OA\OA.Model\bin\Release\zh-Hans\EntityFramework.resources.dll
+F:\xzj\vs\OA\OA.Model\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\xzj\vs\OA\OA.Model\obj\Release\OA.Model.dll
+F:\xzj\vs\OA\OA.Model\obj\Release\OA.Model.pdb
+F:\xzj\vs\OA\OA.Model\obj\Release\OA.Model.csprojResolveAssemblyReference.cache

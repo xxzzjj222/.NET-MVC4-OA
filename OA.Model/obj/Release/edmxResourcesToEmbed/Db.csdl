@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Db" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DbContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserInfo" EntityType="Db.UserInfo" />
+    <EntitySet Name="OrderInfo" EntityType="Db.OrderInfo" />
+    <AssociationSet Name="UserInfoOrderInfo" Association="Db.UserInfoOrderInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="OrderInfo" EntitySet="OrderInfo" />
+    </AssociationSet>
+    <EntitySet Name="RoleInfo" EntityType="Db.RoleInfo" />
+    <EntitySet Name="ActionInfo" EntityType="Db.ActionInfo" />
+    <AssociationSet Name="UserInfoRoleInfo" Association="Db.UserInfoRoleInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+    </AssociationSet>
+    <AssociationSet Name="ActionInfoRoleInfo" Association="Db.ActionInfoRoleInfo">
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+      <End Role="RoleInfo" EntitySet="RoleInfo" />
+    </AssociationSet>
+    <EntitySet Name="R_UserInfo_ActionInfo" EntityType="Db.R_UserInfo_ActionInfo" />
+    <AssociationSet Name="UserInfoR_UserInfo_ActionInfo" Association="Db.UserInfoR_UserInfo_ActionInfo">
+      <End Role="UserInfo" EntitySet="UserInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="ActionInfoR_UserInfo_ActionInfo" Association="Db.ActionInfoR_UserInfo_ActionInfo">
+      <End Role="ActionInfo" EntitySet="ActionInfo" />
+      <End Role="R_UserInfo_ActionInfo" EntitySet="R_UserInfo_ActionInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="32" />
+    <NavigationProperty Name="OrderInfo" Relationship="Db.UserInfoOrderInfo" FromRole="UserInfo" ToRole="OrderInfo" />
+    <Property Type="String" Name="Password" Nullable="true" />
+    <NavigationProperty Name="RoleInfo" Relationship="Db.UserInfoRoleInfo" FromRole="UserInfo" ToRole="RoleInfo" />
+    <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="Db.UserInfoR_UserInfo_ActionInfo" FromRole="UserInfo" ToRole="R_UserInfo_ActionInfo" />
+    <Property Type="DateTime" Name="SubTime" Nullable="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="true" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="128" />
+    <Property Type="Int16" Name="DelFlag" Nullable="true" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="OrderInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderName" Nullable="true" MaxLength="32" />
+    <NavigationProperty Name="UserInfo" Relationship="Db.UserInfoOrderInfo" FromRole="OrderInfo" ToRole="UserInfo" />
+    <Property Type="Int32" Name="UserInfoID" Nullable="false" />
+    <Property Type="Int16" Name="DelFlag" Nullable="true" DefaultValue="0" />
+  </EntityType>
+  <Association Name="UserInfoOrderInfo">
+    <End Type="Db.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="Db.OrderInfo" Role="OrderInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderInfo">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="RoleInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="UserInfo" Relationship="Db.UserInfoRoleInfo" FromRole="RoleInfo" ToRole="UserInfo" />
+    <NavigationProperty Name="ActionInfo" Relationship="Db.ActionInfoRoleInfo" FromRole="RoleInfo" ToRole="ActionInfo" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="64" />
+    <Property Type="DateTime" Name="SubTime" Nullable="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="true" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="128" />
+    <Property Type="Int16" Name="DelFlag" Nullable="true" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="ActionInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="RoleInfo" Relationship="Db.ActionInfoRoleInfo" FromRole="ActionInfo" ToRole="RoleInfo" />
+    <NavigationProperty Name="R_UserInfo_ActionInfo" Relationship="Db.ActionInfoR_UserInfo_ActionInfo" FromRole="ActionInfo" ToRole="R_UserInfo_ActionInfo" />
+    <Property Type="DateTime" Name="SubTime" Nullable="true" />
+    <Property Type="DateTime" Name="ModifiedOn" Nullable="true" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="128" />
+    <Property Type="Int16" Name="DelFlag" Nullable="true" DefaultValue="0" />
+    <Property Type="String" Name="Url" Nullable="true" MaxLength="512" />
+    <Property Type="String" Name="HttpMethod" Nullable="true" MaxLength="32" />
+    <Property Type="String" Name="ActionName" Nullable="true" MaxLength="32" />
+    <Property Type="Boolean" Name="IsMenu" Nullable="true" />
+  </EntityType>
+  <Association Name="UserInfoRoleInfo">
+    <End Type="Db.UserInfo" Role="UserInfo" Multiplicity="*" />
+    <End Type="Db.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+  </Association>
+  <Association Name="ActionInfoRoleInfo">
+    <End Type="Db.ActionInfo" Role="ActionInfo" Multiplicity="*" />
+    <End Type="Db.RoleInfo" Role="RoleInfo" Multiplicity="*" />
+  </Association>
+  <EntityType Name="R_UserInfo_ActionInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Boolean" Name="HasPermission" Nullable="true" />
+    <NavigationProperty Name="UserInfo" Relationship="Db.UserInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="UserInfo" />
+    <Property Type="Int32" Name="UserInfoID" Nullable="false" />
+    <NavigationProperty Name="ActionInfo" Relationship="Db.ActionInfoR_UserInfo_ActionInfo" FromRole="R_UserInfo_ActionInfo" ToRole="ActionInfo" />
+    <Property Type="Int32" Name="ActionInfoID" Nullable="false" />
+    <Property Type="Int16" Name="DelFlag" Nullable="true" DefaultValue="0" />
+  </EntityType>
+  <Association Name="UserInfoR_UserInfo_ActionInfo">
+    <End Type="Db.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="Db.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="UserInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActionInfoR_UserInfo_ActionInfo">
+    <End Type="Db.ActionInfo" Role="ActionInfo" Multiplicity="1" />
+    <End Type="Db.R_UserInfo_ActionInfo" Role="R_UserInfo_ActionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActionInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="R_UserInfo_ActionInfo">
+        <PropertyRef Name="ActionInfoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

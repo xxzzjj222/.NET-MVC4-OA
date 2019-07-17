@@ -1,0 +1,11 @@
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongodbDemo.exe.config
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongodbDemo.exe
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongodbDemo.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\log4net.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\log4net.xml
+F:\xzj\vs\OA\MongodbDemo\obj\Release\MongodbDemo.exe
+F:\xzj\vs\OA\MongodbDemo\obj\Release\MongodbDemo.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.xml
+F:\xzj\vs\OA\MongodbDemo\obj\Release\MongodbDemo.csprojResolveAssemblyReference.cache

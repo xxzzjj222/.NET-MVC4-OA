@@ -5,9 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="38b49739c91940b3a35b74cd2bd18b98" Name="关系图1" >
-        <EntityTypeShape EntityType="Db.UserInfo" Width="1.5" PointX="3.625" PointY="2.25" />
-        <EntityTypeShape EntityType="Db.OrderInfo" Width="1.5" PointX="6.625" PointY="2.375" />
+        <EntityTypeShape EntityType="Db.UserInfo" Width="1.5" PointX="2.125" PointY="1.375" />
+        <EntityTypeShape EntityType="Db.OrderInfo" Width="1.5" PointX="2.125" PointY="5.375" />
         <AssociationConnector Association="Db.UserInfoOrderInfo" />
+        <EntityTypeShape EntityType="Db.RoleInfo" Width="1.5" PointX="7.875" PointY="5.25" />
+        <EntityTypeShape EntityType="Db.ActionInfo" Width="1.5" PointX="8.5" PointY="1.125" />
+        <AssociationConnector Association="Db.UserInfoRoleInfo" />
+        <AssociationConnector Association="Db.ActionInfoRoleInfo" />
+        <EntityTypeShape EntityType="Db.R_UserInfo_ActionInfo" Width="1.5" PointX="4.75" PointY="0.875" />
+        <AssociationConnector Association="Db.UserInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="Db.ActionInfoR_UserInfo_ActionInfo" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,0 +1,9 @@
+F:\xzj\vs\OA\SprigDemo\bin\Release\Dals.xml
+F:\xzj\vs\OA\SprigDemo\bin\Release\SprigDemo.exe.config
+F:\xzj\vs\OA\SprigDemo\bin\Release\SprigDemo.exe
+F:\xzj\vs\OA\SprigDemo\bin\Release\SprigDemo.pdb
+F:\xzj\vs\OA\SprigDemo\bin\Release\Common.Logging.dll
+F:\xzj\vs\OA\SprigDemo\bin\Release\Spring.Core.dll
+F:\xzj\vs\OA\SprigDemo\obj\Release\SprigDemo.exe
+F:\xzj\vs\OA\SprigDemo\obj\Release\SprigDemo.pdb
+F:\xzj\vs\OA\SprigDemo\obj\Release\SprigDemo.csprojResolveAssemblyReference.cache

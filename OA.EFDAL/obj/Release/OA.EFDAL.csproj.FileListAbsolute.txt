@@ -1,0 +1,16 @@
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.EFDAL.dll.config
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.EFDAL.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.EFDAL.pdb
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\EntityFramework.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\EntityFramework.SqlServer.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.IDAL.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.Model.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.IDAL.pdb
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\OA.Model.pdb
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\EntityFramework.xml
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\EntityFramework.SqlServer.xml
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\zh-Hans\EntityFramework.resources.dll
+F:\xzj\vs\OA\OA.EFDAL\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\xzj\vs\OA\OA.EFDAL\obj\Release\OA.EFDAL.csprojResolveAssemblyReference.cache
+F:\xzj\vs\OA\OA.EFDAL\obj\Release\OA.EFDAL.dll
+F:\xzj\vs\OA\OA.EFDAL\obj\Release\OA.EFDAL.pdb

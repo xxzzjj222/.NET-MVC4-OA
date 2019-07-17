@@ -36,5 +36,9 @@ namespace OA.UIPortal.Controllers
             }
             return RedirectToAction("Index");
         }
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }

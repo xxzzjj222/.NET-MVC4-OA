@@ -11,6 +11,7 @@ namespace OA.Commom.Cache
     public class MemcacheWriter:ICacheWriter
     {
         private MemcachedClient memcacheClient;
+        
         public MemcacheWriter()
         {
             string[] servers={"127.0.0.1:11211"};

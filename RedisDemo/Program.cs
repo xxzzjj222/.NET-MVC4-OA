@@ -14,6 +14,13 @@ namespace RedisDemo
         static void Main(string[] args)
         {
             var client = RedisManager.GetClient();
+            HashSet<string> s = new HashSet<string>();
+            s.Add("aa");
+            s.Add("bb");
+            foreach (var item in s)
+            {
+                Console.WriteLine(item);
+            }
             ////排序集合
             //client.AddItemToSortedSet("u", "user1", 4);
             //client.AddItemToSortedSet("u", "user2", 3);
@@ -46,19 +53,19 @@ namespace RedisDemo
             //t1.Start();
             //Thread t2 = new Thread(Get);
             //t2.Start();
-            for(int i=0;i<10;i++)
-            {
-                client.SetEntryInHash("hash","test"+i,ServiceStack.Text.JsonSerializer.SerializeToString(new {
-                    id=i+1,
-                    name="xzj"+(i+1)
-                }));
-            }
-            List<string> hashval = client.GetHashValues("hash");
-            Console.WriteLine(client.GetValueFromHash("hash","test1"));
-            foreach (var item in hashval)
-            {
-                Console.WriteLine(item);
-            }
+            //for(int i=0;i<10;i++)
+            //{
+            //    client.SetEntryInHash("hash","test"+i,ServiceStack.Text.JsonSerializer.SerializeToString(new {
+            //        id=i+1,
+            //        name="xzj"+(i+1)
+            //    }));
+            //}
+            //List<string> hashval = client.GetHashValues("hash");
+            //Console.WriteLine(client.GetValueFromHash("hash","test1"));
+            //foreach (var item in hashval)
+            //{
+            //    Console.WriteLine(item);
+            //}
             Console.ReadKey();
         }
         public static void Run()

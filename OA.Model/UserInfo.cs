@@ -17,13 +17,22 @@ namespace OA.Model
     {
         public UserInfo()
         {
+            this.DelFlag = 0;
             this.OrderInfo = new HashSet<OrderInfo>();
+            this.RoleInfo = new HashSet<RoleInfo>();
+            this.R_UserInfo_ActionInfo = new HashSet<R_UserInfo_ActionInfo>();
         }
     
         public int ID { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
+        public Nullable<System.DateTime> SubTime { get; set; }
+        public Nullable<System.DateTime> ModifiedOn { get; set; }
+        public string Remark { get; set; }
+        public Nullable<short> DelFlag { get; set; }
     
         public virtual ICollection<OrderInfo> OrderInfo { get; set; }
+        public virtual ICollection<RoleInfo> RoleInfo { get; set; }
+        public virtual ICollection<R_UserInfo_ActionInfo> R_UserInfo_ActionInfo { get; set; }
     }
 }

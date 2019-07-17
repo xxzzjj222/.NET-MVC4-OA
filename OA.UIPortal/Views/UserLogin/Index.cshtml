@@ -10,6 +10,14 @@
     <title>Index</title>
     <script src="~/Scripts/jquery-1.8.2.min.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <link href="../Content/Blue/layui/css/layui.css" rel="stylesheet" />
+    <link href="../Content/Blue/CSS/login.css" rel="stylesheet" />
+    <link href="../Content/Blue/CSS/common.css" rel="stylesheet" />
+    <link href="../Content/Blue/CSS/init.css" rel="stylesheet" />
+    <script src="../Content/Blue/layui/layui.js"></script>
+    @*<script src="../Content/Blue/JS/login.js"></script>*@
+    <script src="../Content/Blue/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../Content/Blue/JS/common.js"></script>
     <script>
         function loginSuccess(data) {
             if (data == "succeed") {
@@ -20,16 +28,36 @@
         }
     </script>
 </head>
-<body>
-    @using (Ajax.BeginForm("ProcessLogin", "UserLogin", new AjaxOptions() { OnSuccess = "loginSuccess" }))
+<body class="body">
+    @using (Ajax.BeginForm("ProcessLogin", "UserLogin", new AjaxOptions()
     {
-    <div>
-            @Html.Label("同户名")
-            @Html.TextBox("UserName")
-            @Html.Label("密码")
-            @Html.TextBox("Password")
-            <input type="submit" value="提交" style="width:50px;height:50px" />
-    </div>
+        OnSuccess = "loginSuccess"
+    }))
+    {
+        <div class="layui-main main">
+            <form class="layui-form form">
+                <div class="layui-form-item">
+                    @Html.Label("用户名", new { @class = "layui-form-label font-aligin-left" })
+                    <div class="layui-input-block">
+                       @* <input type="text" name="userName" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" />*@
+                        @Html.TextBox("UserName", "", new { @name = "UserName",@placeholder="请输入用户名",@class="layui-input",@autocomplete="off"})
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    @Html.Label("密码", new { @class = "layui-form-label font-aligin-left" })
+                    <div class="layui-input-block">
+                       @* <input type="text" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" />*@
+                        @Html.TextBox("Password", "", new { @name = "Password", @placeholder = "请输入密码", @autocomplete = "off", @class = "layui-input" })
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn btn-login-register-color" lay-submit lay-filter="formDemo">登录</button>
+                        <button class="layui-btn btn-login-register-color">注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     }
 </body>
 </html>
