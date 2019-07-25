@@ -19,5 +19,9 @@ namespace OA.IDAL
 
         bool Delete(T entity);
 
+        bool Delete(int id);
+
+        int DeleteListByLogical(List<int> ids);
+
     }
 }

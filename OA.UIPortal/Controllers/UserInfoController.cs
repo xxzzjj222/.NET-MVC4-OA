@@ -40,5 +40,11 @@ namespace OA.UIPortal.Controllers
         {
             return View();
         }
+
+        public ActionResult Delete(int ID)
+        {
+            UserInfoService.Delete(ID);
+            return RedirectToAction("Index");
+        }
     }
 }

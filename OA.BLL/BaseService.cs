@@ -42,6 +42,7 @@ namespace OA.BLL
         {
             return CurrentDal.GetPageEntities<S>(pageSize,pageIndex,out total,whereLambda,orderLambda,isAsc);
         }
+        #region cud
         /// <summary>
         /// 新增
         /// </summary>
@@ -73,5 +74,35 @@ namespace OA.BLL
             CurrentDal.Delete(entity);
             return dbSession.SaveChanges() > 0;
         }
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool Delete(int id)
+        {
+            CurrentDal.Delete(id);
+            return dbSession.SaveChanges() > 0;
+        }
+        /// <summary>
+        /// 批量删除
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        public int DeleteList(List<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                CurrentDal.Delete(id);
+            }
+            return dbSession.SaveChanges();
+        }
+
+        public int DeleteListByLogical(List<int> ids)
+        {
+            CurrentDal.DeleteListByLogical(ids);
+            return dbSession.SaveChanges();
+        }
+        #endregion
     }
 }

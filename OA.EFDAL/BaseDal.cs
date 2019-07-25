@@ -56,6 +56,7 @@ namespace OA.EFDAL
                     .Take(pageSize).AsQueryable();
             }
         }
+        #region cud
         /// <summary>
         /// 新增
         /// </summary>
@@ -86,5 +87,32 @@ namespace OA.EFDAL
             db.Entry(entity).State = EntityState.Deleted;
             return true;
         }
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool Delete(int id)
+        {
+            T entity = db.Set<T>().Find(id);
+            db.Set<T>().Remove(entity);
+            return true;
+        }
+        /// <summary>
+        /// 逻辑删除
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        public int DeleteListByLogical(List<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                T entity = db.Set<T>().Find(id);
+                db.Entry(entity).Property("DelFlag").IsModified = true;
+                db.Entry(entity).Property("DelFlag").CurrentValue = Model.DelFlagEnum.Deleted;
+            }
+            return ids.Count;
+        }
+        #endregion
     }
 }

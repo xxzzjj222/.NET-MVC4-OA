@@ -18,5 +18,11 @@ namespace OA.IBLL
         bool Update(T entity);
 
         bool Delete(T entity);
+
+        bool Delete(int id);
+
+        int DeleteList(List<int> ids);
+
+        int DeleteListByLogical(List<int> ids);
     }
 }
