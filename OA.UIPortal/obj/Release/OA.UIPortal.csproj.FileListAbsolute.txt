@@ -84,3 +84,6 @@ F:\xzj\vs\OA\OA.UIPortal\bin\zh-Hans\EntityFramework.resources.dll
 F:\xzj\vs\OA\OA.UIPortal\obj\Release\OA.UIPortal.csprojResolveAssemblyReference.cache
 F:\xzj\vs\OA\OA.UIPortal\obj\Release\OA.UIPortal.dll
 F:\xzj\vs\OA\OA.UIPortal\obj\Release\OA.UIPortal.pdb
+F:\xzj\vs\OA\OA.UIPortal\bin\SqlSugar.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\SugarDao.dll
+F:\xzj\vs\OA\OA.UIPortal\bin\SugarDao.pdb

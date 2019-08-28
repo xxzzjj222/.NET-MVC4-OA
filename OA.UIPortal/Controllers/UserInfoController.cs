@@ -1,4 +1,5 @@
 ﻿using OA.BLL;
+using OA.Commom.Cache;
 using OA.IBLL;
 using OA.Model;
 using System;
@@ -18,6 +19,7 @@ namespace OA.UIPortal.Controllers
         public ActionResult Index()
         {
             //throw new Exception("出错啦");
+            string aa=CacheHelper.GetCache("verifyCode").ToString();
             ViewData.Model = UserInfoService.GetEntities(u=>true);
             return View();
         }

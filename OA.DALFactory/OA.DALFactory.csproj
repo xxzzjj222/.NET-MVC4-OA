@@ -78,6 +78,10 @@
       <Project>{bb701f4f-65bf-4f70-a2c1-bb37031c0d30}</Project>
       <Name>OA.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SugarDao\SugarDao.csproj">
+      <Project>{125405f8-912a-48c4-b912-690472d7f739}</Project>
+      <Name>SugarDao</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

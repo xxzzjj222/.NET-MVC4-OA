@@ -1,7 +1,6 @@
 F:\xzj\vs\OA\RedisDemo\bin\Release\RedisDemo.exe.config
 F:\xzj\vs\OA\RedisDemo\bin\Release\RedisDemo.exe
 F:\xzj\vs\OA\RedisDemo\bin\Release\RedisDemo.pdb
-F:\xzj\vs\OA\RedisDemo\bin\Release\Newtonsoft.Json.dll
 F:\xzj\vs\OA\RedisDemo\bin\Release\ServiceStack.Common.dll
 F:\xzj\vs\OA\RedisDemo\bin\Release\ServiceStack.Interfaces.dll
 F:\xzj\vs\OA\RedisDemo\bin\Release\ServiceStack.Redis.dll
@@ -9,3 +8,4 @@ F:\xzj\vs\OA\RedisDemo\bin\Release\ServiceStack.Text.dll
 F:\xzj\vs\OA\RedisDemo\obj\Release\RedisDemo.exe
 F:\xzj\vs\OA\RedisDemo\obj\Release\RedisDemo.pdb
 F:\xzj\vs\OA\RedisDemo\obj\Release\RedisDemo.csprojResolveAssemblyReference.cache
+F:\xzj\vs\OA\RedisDemo\bin\Release\Newtonsoft.Json.dll

@@ -9,3 +9,15 @@ F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.dll
 F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.pdb
 F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Bson.xml
 F:\xzj\vs\OA\MongodbDemo\obj\Release\MongodbDemo.csprojResolveAssemblyReference.cache
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Core.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.GridFS.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Legacy.dll
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.xml
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Core.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Core.xml
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.GridFS.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.GridFS.xml
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Legacy.pdb
+F:\xzj\vs\OA\MongodbDemo\bin\Release\MongoDB.Driver.Legacy.xml

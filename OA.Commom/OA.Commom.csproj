@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -67,9 +68,11 @@
     <Compile Include="ILogWriter.cs" />
     <Compile Include="Log4NetWriter.cs" />
     <Compile Include="LogHelper.cs" />
+    <Compile Include="ParamModel\VerifyCodeParam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerLogWriter.cs" />
     <Compile Include="TextFileLogWriter.cs" />
+    <Compile Include="tools\VerifyCode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

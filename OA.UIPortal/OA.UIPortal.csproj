@@ -92,6 +92,10 @@
     <Reference Include="Spring.Web.Mvc4">
       <HintPath>..\packages\Spring.Web.Mvc4.2.0.1\lib\net45\Spring.Web.Mvc4.dll</HintPath>
     </Reference>
+    <Reference Include="SqlSugar, Version=5.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.5.0.0.9\lib\SqlSugar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -444,6 +448,10 @@
     <ProjectReference Include="..\OA.Model\OA.Model.csproj">
       <Project>{bb701f4f-65bf-4f70-a2c1-bb37031c0d30}</Project>
       <Name>OA.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SugarDao\SugarDao.csproj">
+      <Project>{125405f8-912a-48c4-b912-690472d7f739}</Project>
+      <Name>SugarDao</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

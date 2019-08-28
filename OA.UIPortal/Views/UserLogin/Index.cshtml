@@ -24,7 +24,13 @@
                 window.location.href = "/UserInfo/Index";
             } else if (data == "failed") {
                 alert("登录失败");
+            } else if (data == "verifyCodeError") {
+                alert("验证码错误");
             }
+        }
+        function reImg() {
+            var img = document.getElementById("imgcode");
+            img.src = "/UserLogin/GetAuthCode?time=" + Math.random();
         }
     </script>
 </head>
@@ -49,6 +55,15 @@
                        @* <input type="text" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" />*@
                         @Html.TextBox("Password", "", new { @name = "Password", @placeholder = "请输入密码", @autocomplete = "off", @class = "layui-input" })
                     </div>
+                </div>
+                <div class="layui-form-item">
+                <div class="layui-input-block">
+                     @Html.TextBox("VerifyCode", "", new { @name = "VerifyCode",@placeholder="请输入验证码",@class="layui-input",@autocomplete="off"})
+                    <div style="width: 110px; float: right; padding-top: 14px; padding-left: 14px;">
+                            看不清？<a id="switchCode" href="#;" onclick="reImg()" style="text-decoration: none;">换一张</a>
+                            <img id="imgcode" class="authcode" src="~/UserLogin/GetAuthCode" width=" 80" height="25" />
+                    </div>
+                </div>
                 </div>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
